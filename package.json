@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
-    "build": "mastra build"
+    "build": "mastra build",
+    "start": "tsx src/index.ts",
+    "start:stdio": "SERVER_TYPE=stdio tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,12 +22,16 @@
     "@mastra/core": "^0.10.0",
     "@mastra/libsql": "^0.10.0",
     "@mastra/loggers": "^0.10.0",
+    "@mastra/mcp": "^0.10.0",
     "@mastra/memory": "^0.10.0",
+    "@mastra/rag": "^0.10.0",
     "zod": "^3.25.28"
   },
   "devDependencies": {
     "@types/node": "^22.15.21",
     "mastra": "^0.10.0",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3"
-  }
+  },
+  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
 }
